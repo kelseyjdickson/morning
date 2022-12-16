@@ -1,0 +1,39 @@
+#container {
+    border: 1px solid black;
+    height: 600px;
+    width: 600px;
+}
+input {
+    height: 20px;
+    width: 300px;
+    border: 1px solid #000;
+    margin-top: 10px;
+    float: left;
+}
+
+input[type=button] {
+    float: none;
+}
+
+#form {
+    background-color: #FFF;
+    height: 600px;
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0px;
+    text-align: center;
+}
+.grateful-container {
+    border: 1px solid blue;
+    display: flex;
+}
+ .grateful-form {
+    border: 1px solid pink;
+    display: flex;
+
+} 
+
