@@ -1,5 +1,4 @@
-import Greeting from "./Greeting";
-import Grateful from "./Grateful";
+import { Link } from "react-router-dom";
 
 import "../../styles/main.css";
 const Main = () => {
@@ -7,16 +6,7 @@ const Main = () => {
     <>
       <div id="container">
         <h1>Main Container</h1>
-        <Greeting />
-        <div className="grateful-container">
-          <Grateful />
-        </div>
-        <div className="grateful2">
-          <Grateful />
-        </div>
-        <div className="grateful3">
-          <Grateful />
-        </div>
+        <Link to="signup"> Sign Up</Link>
       </div>
     </>
   );

@@ -1,39 +1,59 @@
-#container {
-    border: 1px solid black;
-    height: 600px;
-    width: 600px;
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    
 }
-input {
-    height: 20px;
-    width: 300px;
-    border: 1px solid #000;
-    margin-top: 10px;
-    float: left;
-}
-
-input[type=button] {
-    float: none;
+.inner {
+        max-width: 850px;
+            margin: auto;
+            background: #fff;
+            display: flex;
+            
 }
 
-#form {
-    background-color: #FFF;
-    height: 600px;
-    width: 600px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 0px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding: 0px;
+ .form-holder {
+     padding-left: 24px;
+     position: relative;
+    
+ }
+ .form-holder.active:before {
+     border: 2px solid transparent;
+     background: #ff9a9c;
+ }
+ .form-holder:before {
+        -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 2px solid #ff9a9c;
+            position: absolute;
+            left: 1px;
+            top: 50%;
+            transform: translateY(-50%);
+ }
+
+ h3 {
+    font-size: 35px;
     text-align: center;
-}
-.grateful-container {
-    border: 1px solid blue;
-    display: flex;
-}
- .grateful-form {
-    border: 1px solid pink;
-    display: flex;
+    margin-bottom: 27px;
+    color: #ff9a9c;
+ }
 
-} 
-
+ .form-control {
+    display: block;
+    width: 100%;
+    border-radius: 23.5px;
+    height: 47px;
+    padding: 0 24px;
+    color: gray;
+    font-size: 13px;
+    border: none;
+    background: #f7f7f7;
+    margin-bottom: 25px;
+    
+ }
+ 

@@ -1,7 +1,7 @@
 import React from "react";
 
-const Grateful = () => {
+const Login = () => {
   return <div></div>;
 };
 
-export default Grateful;
+export default Login;
