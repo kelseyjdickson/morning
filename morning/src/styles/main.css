@@ -1,59 +1,51 @@
-.wrapper {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    
-}
-.inner {
-        max-width: 850px;
-            margin: auto;
-            background: #fff;
-            display: flex;
-            
-}
-
- .form-holder {
-     padding-left: 24px;
-     position: relative;
-    
- }
- .form-holder.active:before {
-     border: 2px solid transparent;
-     background: #ff9a9c;
- }
- .form-holder:before {
-        -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-            content: "";
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            border: 2px solid #ff9a9c;
-            position: absolute;
-            left: 1px;
-            top: 50%;
-            transform: translateY(-50%);
- }
-
- h3 {
-    font-size: 35px;
+.App {
     text-align: center;
-    margin-bottom: 27px;
-    color: #ff9a9c;
- }
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-image: linear-gradient(49deg, #486dbc,  #ebf 48%, #fcedfc 48%, #486dbc);
+}
 
- .form-control {
-    display: block;
-    width: 100%;
-    border-radius: 23.5px;
-    height: 47px;
-    padding: 0 24px;
+.auth-form-container, .login-form, .register-form {
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width: 600px) {
+    .auth-form-container {
+        padding: 5rem;
+        border: 1px solid white;
+        border-radius: 10px;
+        margin: 0.5rem;
+    }
+}
+
+label {
+    text-align: left;
+    padding: 0.25rem 0;
     color: gray;
-    font-size: 13px;
+}
+
+input {
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+
+}
+
+button {
     border: none;
-    background: #f7f7f7;
-    margin-bottom: 25px;
-    
- }
- 
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: gray;
+}
+
+.link-btn{
+    background: none;
+    color: white;
+    text-decoration: underline;
+}

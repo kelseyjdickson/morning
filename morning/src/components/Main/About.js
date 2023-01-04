@@ -1,9 +1,10 @@
 import React from "react";
 
-export default function About() {
+export default function About({ data }) {
+  console.log(data);
   return (
     <div>
-      <h1>Test</h1>
+      <h1>About</h1>
     </div>
   );
 }
